@@ -1,11 +1,11 @@
 # Move away custom stuff:
-mv -vn ./nextcloud/{tmp,pico.php} ./
+mv -vn ../nextcloud/{tmp,pico.php} ../
 
 # Now start updating via WebUI!
 # ...
 
 # Move back custom stuff:
-mv -vn ./{tmp,pico.php} ./nextcloud/
+mv -vn ../{tmp,pico.php} ../nextcloud/
 
 # Update .htaccess mod_rewrite rules:
 ../scripts/patch-htaccess.sh
