@@ -1,0 +1,2 @@
+mkdir ../nextcloud/tmp
+chmod -c 0750 ../nextcloud/tmp

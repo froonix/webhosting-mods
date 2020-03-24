@@ -1,0 +1,25 @@
+# Tabs sind bei uns immer schon 4 Zeichen lang.
+set tabsize 4
+
+# Lange Zeilen dürfen niemals umbrochen werden!
+set nowrap
+
+# Andauernde Anzeige der Zeilennummer/-position.
+set const
+
+# Die erste Zeile nicht freilassen.
+set morespace
+
+# Suchbegriffe speichern.
+set historylog
+
+# Ermöglicht das Setzen des Cursors mit der Maus.
+# Funktioniert auch über SSH problemlos, hat aber
+# den gravierenden Nachteil, dass danach keine
+# Markierung von Text mehr möglich ist...
+unset mouse
+
+# Diverse gute Syntax Highlighter einbinden.
+# https://github.com/serialhex/nano-highlight
+include ~/.nano/syntax/markdown.nanorc
+include ~/.nano/syntax/nanorc.nanorc

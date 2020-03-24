@@ -1,0 +1,6 @@
+#!/bin/bash
+/home/etc/php/host/nextcloud.bin \
+  -c /home/etc/php/host/nextcloud.ini \
+  -f "$(dirname "$0")/../nextcloud/occ" \
+  -- $@
+exit $?
