@@ -1,0 +1,9 @@
+To set the default cli PHP version write the short PHP version string (e.g. "72" for php7.2) into the file /conf/phpversion
+We will re-link the PHP version in the first 15 minutes of every hour
+The following short PHP version strings are available on the CLI:
+56
+70
+71
+72
+73
+74
