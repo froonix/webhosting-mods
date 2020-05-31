@@ -8,6 +8,7 @@
 ###########################################
 
 set -eu -o pipefail
+shopt -s dotglob
 dir="${1:-.}"
 
 if [[ "$#" -gt 1 || ! -d "$dir" ]]
@@ -33,20 +34,19 @@ then
 	fi
 fi
 
-for file in ./*/
+for file in ./*
 do
-	if [[ -d "$file" && -w "$file" ]]
+	if [[ -d "$file" && -w "$file" ]] || [[ -f "$file" ]]
 	then
 		args+=( "${dir}${file:2}" )
 	fi
 done
 
-for file in ./* ./.*
-do
-	if [[ -f "$file" ]]
-	then
-		args+=( "${dir}${file:2}" )
-	fi
-done
-
-du -s -h -c -- "${args[@]}"
+du \
+	--human-readable \
+	--no-dereference \
+	--one-file-system \
+	--summarize \
+	--time \
+	--total \
+	-- "${args[@]}"
