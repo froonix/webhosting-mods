@@ -20,7 +20,8 @@ then
 	exit 1
 fi
 
-cd "$dir"
+pwd=$(pwd)
+cd -- "$dir"
 args=()
 
 if [[ "$dir" != "/" ]]
@@ -42,7 +43,7 @@ do
 	fi
 done
 
-du \
+cd -- "$pwd" && du \
 	--human-readable \
 	--no-dereference \
 	--one-file-system \
@@ -50,3 +51,4 @@ du \
 	--time \
 	--total \
 	-- "${args[@]}"
+exit $?
