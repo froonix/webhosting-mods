@@ -30,6 +30,11 @@ if [ -d ~/bin ]; then
 	export PATH="$PATH:~/bin"
 fi
 
+# Load variables
+if [ -f ~/.bash_vars ]; then
+	. ~/.bash_vars
+fi
+
 # Load aliases
 if [ -f ~/.bash_aliases ]; then
 	. ~/.bash_aliases
