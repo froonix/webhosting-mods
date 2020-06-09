@@ -1,0 +1,6 @@
+[client]
+host = 10.1.2.3
+user = k12345_nextcloud
+password = myssecretpassword
+#default-character-set = utf8mb4
+database = k12345_nextcloud
