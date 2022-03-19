@@ -1,6 +1,3 @@
 <?php
 
-$CONFIG =
-[
-	'datadirectory' => realpath(__dir__ . '/../data'),
-];
+$CONFIG['datadirectory'] = realpath(__dir__ . '/../data');
