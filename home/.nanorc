@@ -5,7 +5,7 @@ set tabsize 4
 set nowrap
 
 # Andauernde Anzeige der Zeilennummer/-position.
-set const
+set constantshow
 
 # Die erste Zeile nicht freilassen.
 set morespace
