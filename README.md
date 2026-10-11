@@ -1,3 +1,6 @@
+> [!IMPORTANT]  
+> REPOSITORY ARCHIVED: Among other things, I no longer have a Nextcloud installation on those webspaces.
+
 # webhosting-mods
 Various stuff for restricted webspaces
 
